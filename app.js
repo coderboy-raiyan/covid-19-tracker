@@ -49,4 +49,3 @@ function showDataTabel(data) {
   });
 }
 getData();
-console.log(tbody);

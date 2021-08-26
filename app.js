@@ -31,10 +31,14 @@ function showDataTabel(data) {
 
     if (caseItem.todayDeaths >= 100) {
       td3.classList.add("table-danger");
-    } else if (caseItem.recovered <= 20000) {
+    } else if (caseItem.recovered >= 1 && caseItem.recovered <= 1000) {
       td4.classList.add("table-success");
-    } else if (caseItem.todayCases <= 763) {
+    } else if (caseItem.todayCases >= 101 && caseItem.todayCases <= 763) {
       td2.classList.add("table-warning");
+    } else if (caseItem.recovered >= 1001) {
+      td4.classList.add("table-info");
+    } else {
+      td4.classList.add("table-info");
     }
 
     tr.appendChild(th);
